@@ -1,0 +1,19 @@
+Description: Remove some unit test requires dbus to be run.
+ On build servers there's no dbus running. We shouldn't start the service
+ and connected to dbus. Thus we remove unit tests that requires dbus.
+Author: Ying-Chun Liu (PaulLiu) <paulliu@debian.org>
+Forwarded: not-needed
+Last-Update: 2018-05-02
+
+Index: git/Makefile.am
+===================================================================
+--- git.orig/Makefile.am
++++ git/Makefile.am
+@@ -38,7 +38,6 @@ TESTS_UNIT = \
+     test/thread_unit \
+     test/tpm2-command_unit \
+     test/tpm2-response_unit \
+-    test/tss2-tcti-tabrmd_unit \
+     test/tss2-tcti-echo_unit \
+     test/util_unit
+ 

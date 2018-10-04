@@ -1,0 +1,3 @@
+libtcti-tabrmd.so.0 libtcti-tabrmd0 #MINVER#
+ tss2_tcti_tabrmd_init@Base 1.3.1
+ tss2_tcti_tabrmd_init_full@Base 1.3.1

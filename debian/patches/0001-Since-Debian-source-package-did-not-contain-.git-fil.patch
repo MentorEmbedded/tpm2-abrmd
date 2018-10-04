@@ -1,0 +1,18 @@
+From: =?utf-8?b?IlNaIExpbiAo5p6X5LiK5pm6KSI=?= <szlin@debian.org>
+Date: Tue, 1 May 2018 12:04:40 +0800
+Subject: Author: Ying-Chun Liu (PaulLiu) <paulliu@debian.org>
+
+---
+ bootstrap | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/bootstrap b/bootstrap
+index 7067e11..b5e2a08 100755
+--- a/bootstrap
++++ b/bootstrap
+@@ -1,4 +1,4 @@
+ #!/bin/sh
+ 
+-git describe --tags --always --dirty > VERSION
++dpkg-parsechangelog | grep Version: | sed -e 's/Version: //' | sed -e 's/-[^-]*$//' > VERSION
+ autoreconf --install --sym

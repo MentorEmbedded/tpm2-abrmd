@@ -1,0 +1,5 @@
+tpm2-abrmd (2.0.2-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Cedric Hombourger <cedric_hombourger@mentor.com> Thu, 04 Oct 2018 21:21:17 +0800
