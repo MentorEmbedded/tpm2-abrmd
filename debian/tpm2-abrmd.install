@@ -1,7 +1,6 @@
 etc/dbus-1/system.d/
 lib/systemd/system/
 usr/lib/*/systemd/system-preset/
-usr/lib/*/udev/rules.d/
 usr/sbin/tpm2-abrmd
 usr/share/dbus-1/
 usr/share/man/man8/
