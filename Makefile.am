@@ -38,7 +38,6 @@ TESTS_UNIT = \
     test/thread_unit \
     test/tpm2-command_unit \
     test/tpm2-response_unit \
-    test/tss2-tcti-tabrmd_unit \
     test/tss2-tcti-echo_unit \
     test/util_unit
 
