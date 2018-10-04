@@ -15,7 +15,11 @@ override_dh_autoreconf:
 	dh_autoreconf ./bootstrap
 
 override_dh_auto_configure:
-	dh_auto_configure -- --enable-unit --with-dbuspolicydir=/etc/dbus-1/system.d --with-systemdsystemunitdir=/lib/systemd/system
+	dh_auto_configure -- \
+		--enable-unit \
+		--with-dbuspolicydir=/etc/dbus-1/system.d \
+		--with-systemdpresetdir=/lib/systemd/system-preset \
+		--with-systemdsystemunitdir=/lib/systemd/system
 
 override_dh_missing:
 	dh_missing --fail-missing
